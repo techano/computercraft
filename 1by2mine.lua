@@ -1,3 +1,5 @@
+--Customizable variables, change accordingly.
+
 fuelMin = 760
 fuelMax = 1000
 torchMin = 10
@@ -26,11 +28,13 @@ while true do
                 turtle.place()
                 turtle.turnRight() turtle.turnRight()
             end
+
             if turtle.getItemCount() < torchMin then
                 print("My fucking torches are low...")
             end
+
             turtle.select(1)
         end
-        print("My bitchass fuel level: "..turtle.getFuelLevel())
+        print("My bitchass's fuel level: "..turtle.getFuelLevel())
     end
 end
